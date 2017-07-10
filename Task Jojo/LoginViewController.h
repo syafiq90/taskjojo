@@ -16,7 +16,7 @@
 -(NSString*)getUserName;
 -(void)setUserName:(NSString*)userName;
 @end
-@interface LoginViewController : UIViewController{
+@interface LoginViewController : UIViewController<UITextViewDelegate,UITextFieldDelegate>{
     IBOutlet UITextField *userName;
     IBOutlet UITextField *password;
     

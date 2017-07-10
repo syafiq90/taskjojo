@@ -28,6 +28,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     db=[[dbHelper alloc]init];
+    nameTask.delegate=self;
+    address.delegate=self;
     // Do any additional setup after loading the view from its nib.
 }
 
@@ -92,4 +94,21 @@
     nameTask.text=@"";
     address.text=@"";
 }
+
+
+- (BOOL)textFieldShouldReturn:(UITextField *)textField{
+    
+    [textField resignFirstResponder];
+    return YES;
+}
+- (BOOL)textView:(UITextView *)textView shouldChangeTextInRange:(NSRange)range replacementText:(NSString *)text {
+    
+    if([text isEqualToString:@"\n"]) {
+        [textView resignFirstResponder];
+        return NO;
+    }
+    
+    return YES;
+}
+
 @end

@@ -29,21 +29,25 @@
     self.main=[[MainViewController alloc] initWithNibName:@"MainViewController" bundle:[NSBundle mainBundle]];
     self.input=[[InputViewController alloc] initWithNibName:@"InputViewController" bundle:[NSBundle mainBundle]];
         
-    self.login.view.frame=[[UIScreen mainScreen] bounds];
-    self.main.view.frame=[[UIScreen mainScreen] bounds];
-    self.input.view.frame=[[UIScreen mainScreen] bounds];
-        
-        
-    self.login.delegate=self;
-    self.main.delegate=self;
-    self.input.delegate=self;
-    [self.view addSubview:self.login.view];
-    [self.login.view superview];
-        from=self.login.view;
+
     }
     return self;
 }
-
+- (void)viewWillAppear:(BOOL)animated{
+    self.login.view.frame=[[UIScreen mainScreen] bounds];
+    
+    self.main.view.frame=[[UIScreen mainScreen] bounds];
+    self.input.view.frame=[[UIScreen mainScreen] bounds];
+    
+    self.login.delegate=self;
+    self.main.delegate=self;
+    self.input.delegate=self;
+    
+    
+    [self.view addSubview:self.login.view];
+    [self.login.view superview];
+    from=self.login.view;
+}
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
@@ -82,8 +86,8 @@
 }
 -(void)setUserName:(NSString*)userName{
     LoginUser=userName;
-    
-    
 }
+
+
 
 @end

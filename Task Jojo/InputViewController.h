@@ -15,7 +15,7 @@
 -(void)setUserName:(NSString*)userName;
 @end
 
-@interface InputViewController : UIViewController{
+@interface InputViewController : UIViewController<UITextViewDelegate,UITextFieldDelegate>{
     IBOutlet UITextField* nameTask;
     IBOutlet UITextView* address;
     IBOutlet UIDatePicker* date;
