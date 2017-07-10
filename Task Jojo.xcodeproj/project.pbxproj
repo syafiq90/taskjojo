@@ -1,0 +1,544 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A43E08621F10C5F300FCCFAA /* InputViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A43E08601F10C5F300FCCFAA /* InputViewController.m */; };
+		A43E08631F10C5F300FCCFAA /* InputViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A43E08611F10C5F300FCCFAA /* InputViewController.xib */; };
+		A43E08D01F11309F00FCCFAA /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A43E08CF1F11309F00FCCFAA /* CoreData.framework */; };
+		A43E08DE1F11316900FCCFAA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A43E08DD1F11316900FCCFAA /* Foundation.framework */; };
+		A43E08F91F1134C900FCCFAA /* CoreData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A43E08F71F1134C900FCCFAA /* CoreData.xcdatamodeld */; };
+		A43E09101F11454D00FCCFAA /* dbHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = A43E090F1F11454D00FCCFAA /* dbHelper.m */; };
+		A44449381F0FCD2500C286AB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A44449371F0FCD2500C286AB /* main.m */; };
+		A444493B1F0FCD2500C286AB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A444493A1F0FCD2500C286AB /* AppDelegate.m */; };
+		A44449411F0FCD2500C286AB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A444493F1F0FCD2500C286AB /* Main.storyboard */; };
+		A44449461F0FCD2500C286AB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A44449451F0FCD2500C286AB /* Assets.xcassets */; };
+		A44449491F0FCD2500C286AB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A44449471F0FCD2500C286AB /* LaunchScreen.storyboard */; };
+		A44449541F0FCD2500C286AB /* Task_JojoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = A44449531F0FCD2500C286AB /* Task_JojoUITests.m */; };
+		A44449691F0FD8EF00C286AB /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A44449671F0FD8EF00C286AB /* LoginViewController.m */; };
+		A444496A1F0FD8EF00C286AB /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A44449681F0FD8EF00C286AB /* LoginViewController.xib */; };
+		A444496E1F0FE14300C286AB /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A444496C1F0FE14300C286AB /* MainViewController.m */; };
+		A444496F1F0FE14300C286AB /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A444496D1F0FE14300C286AB /* MainViewController.xib */; };
+		A44449761F0FEEF600C286AB /* ContainerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A44449741F0FEEF600C286AB /* ContainerViewController.m */; };
+		A44449771F0FEEF600C286AB /* ContainerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A44449751F0FEEF600C286AB /* ContainerViewController.xib */; };
+		A4681E371F133A7100EFB8C8 /* icons8-Add-50.png in Resources */ = {isa = PBXBuildFile; fileRef = A4681E361F133A7100EFB8C8 /* icons8-Add-50.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A44449501F0FCD2500C286AB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A444492B1F0FCD2500C286AB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A44449321F0FCD2500C286AB;
+			remoteInfo = "Task Jojo";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A43E085F1F10C5F300FCCFAA /* InputViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InputViewController.h; sourceTree = "<group>"; };
+		A43E08601F10C5F300FCCFAA /* InputViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InputViewController.m; sourceTree = "<group>"; };
+		A43E08611F10C5F300FCCFAA /* InputViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = InputViewController.xib; sourceTree = "<group>"; };
+		A43E08991F1119B700FCCFAA /* Task Jojo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Task Jojo-Bridging-Header.h"; sourceTree = "<group>"; };
+		A43E08CF1F11309F00FCCFAA /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		A43E08DD1F11316900FCCFAA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		A43E08F81F1134C900FCCFAA /* CoreData.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CoreData.xcdatamodel; sourceTree = "<group>"; };
+		A43E090E1F11454D00FCCFAA /* dbHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dbHelper.h; sourceTree = "<group>"; };
+		A43E090F1F11454D00FCCFAA /* dbHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = dbHelper.m; sourceTree = "<group>"; };
+		A44449331F0FCD2500C286AB /* Task Jojo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Task Jojo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A44449371F0FCD2500C286AB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A44449391F0FCD2500C286AB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		A444493A1F0FCD2500C286AB /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		A44449401F0FCD2500C286AB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A44449451F0FCD2500C286AB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A44449481F0FCD2500C286AB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A444494A1F0FCD2500C286AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A444494F1F0FCD2500C286AB /* Task JojoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Task JojoUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A44449531F0FCD2500C286AB /* Task_JojoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Task_JojoUITests.m; sourceTree = "<group>"; };
+		A44449551F0FCD2500C286AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A44449661F0FD8EF00C286AB /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		A44449671F0FD8EF00C286AB /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		A44449681F0FD8EF00C286AB /* LoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
+		A444496B1F0FE14300C286AB /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		A444496C1F0FE14300C286AB /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		A444496D1F0FE14300C286AB /* MainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
+		A44449731F0FEEF600C286AB /* ContainerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContainerViewController.h; sourceTree = "<group>"; };
+		A44449741F0FEEF600C286AB /* ContainerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContainerViewController.m; sourceTree = "<group>"; };
+		A44449751F0FEEF600C286AB /* ContainerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ContainerViewController.xib; sourceTree = "<group>"; };
+		A4681E361F133A7100EFB8C8 /* icons8-Add-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icons8-Add-50.png"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A44449301F0FCD2500C286AB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A43E08DE1F11316900FCCFAA /* Foundation.framework in Frameworks */,
+				A43E08D01F11309F00FCCFAA /* CoreData.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A444494C1F0FCD2500C286AB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A43E08641F10C5FB00FCCFAA /* Src */ = {
+			isa = PBXGroup;
+			children = (
+				A44449661F0FD8EF00C286AB /* LoginViewController.h */,
+				A44449671F0FD8EF00C286AB /* LoginViewController.m */,
+				A44449681F0FD8EF00C286AB /* LoginViewController.xib */,
+				A444496B1F0FE14300C286AB /* MainViewController.h */,
+				A444496C1F0FE14300C286AB /* MainViewController.m */,
+				A444496D1F0FE14300C286AB /* MainViewController.xib */,
+				A43E085F1F10C5F300FCCFAA /* InputViewController.h */,
+				A43E08601F10C5F300FCCFAA /* InputViewController.m */,
+				A43E08611F10C5F300FCCFAA /* InputViewController.xib */,
+			);
+			name = Src;
+			sourceTree = "<group>";
+		};
+		A43E08CE1F11309F00FCCFAA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A43E08DD1F11316900FCCFAA /* Foundation.framework */,
+				A43E08CF1F11309F00FCCFAA /* CoreData.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A43E09071F1141EB00FCCFAA /* database */ = {
+			isa = PBXGroup;
+			children = (
+				A43E090E1F11454D00FCCFAA /* dbHelper.h */,
+				A43E090F1F11454D00FCCFAA /* dbHelper.m */,
+			);
+			name = database;
+			sourceTree = "<group>";
+		};
+		A444492A1F0FCD2500C286AB = {
+			isa = PBXGroup;
+			children = (
+				A44449351F0FCD2500C286AB /* Task Jojo */,
+				A44449521F0FCD2500C286AB /* Task JojoUITests */,
+				A44449341F0FCD2500C286AB /* Products */,
+				A43E08991F1119B700FCCFAA /* Task Jojo-Bridging-Header.h */,
+				A43E08CE1F11309F00FCCFAA /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		A44449341F0FCD2500C286AB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A44449331F0FCD2500C286AB /* Task Jojo.app */,
+				A444494F1F0FCD2500C286AB /* Task JojoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A44449351F0FCD2500C286AB /* Task Jojo */ = {
+			isa = PBXGroup;
+			children = (
+				A4681E351F133A5D00EFB8C8 /* img */,
+				A43E09071F1141EB00FCCFAA /* database */,
+				A43E08641F10C5FB00FCCFAA /* Src */,
+				A44449391F0FCD2500C286AB /* AppDelegate.h */,
+				A444493A1F0FCD2500C286AB /* AppDelegate.m */,
+				A444493F1F0FCD2500C286AB /* Main.storyboard */,
+				A44449451F0FCD2500C286AB /* Assets.xcassets */,
+				A44449471F0FCD2500C286AB /* LaunchScreen.storyboard */,
+				A444494A1F0FCD2500C286AB /* Info.plist */,
+				A44449361F0FCD2500C286AB /* Supporting Files */,
+				A44449731F0FEEF600C286AB /* ContainerViewController.h */,
+				A44449741F0FEEF600C286AB /* ContainerViewController.m */,
+				A44449751F0FEEF600C286AB /* ContainerViewController.xib */,
+				A43E08F71F1134C900FCCFAA /* CoreData.xcdatamodeld */,
+			);
+			path = "Task Jojo";
+			sourceTree = "<group>";
+		};
+		A44449361F0FCD2500C286AB /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A44449371F0FCD2500C286AB /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A44449521F0FCD2500C286AB /* Task JojoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				A44449531F0FCD2500C286AB /* Task_JojoUITests.m */,
+				A44449551F0FCD2500C286AB /* Info.plist */,
+			);
+			path = "Task JojoUITests";
+			sourceTree = "<group>";
+		};
+		A4681E351F133A5D00EFB8C8 /* img */ = {
+			isa = PBXGroup;
+			children = (
+				A4681E361F133A7100EFB8C8 /* icons8-Add-50.png */,
+			);
+			name = img;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A44449321F0FCD2500C286AB /* Task Jojo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A44449581F0FCD2500C286AB /* Build configuration list for PBXNativeTarget "Task Jojo" */;
+			buildPhases = (
+				A444492F1F0FCD2500C286AB /* Sources */,
+				A44449301F0FCD2500C286AB /* Frameworks */,
+				A44449311F0FCD2500C286AB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Task Jojo";
+			productName = "Task Jojo";
+			productReference = A44449331F0FCD2500C286AB /* Task Jojo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A444494E1F0FCD2500C286AB /* Task JojoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A444495B1F0FCD2500C286AB /* Build configuration list for PBXNativeTarget "Task JojoUITests" */;
+			buildPhases = (
+				A444494B1F0FCD2500C286AB /* Sources */,
+				A444494C1F0FCD2500C286AB /* Frameworks */,
+				A444494D1F0FCD2500C286AB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A44449511F0FCD2500C286AB /* PBXTargetDependency */,
+			);
+			name = "Task JojoUITests";
+			productName = "Task JojoUITests";
+			productReference = A444494F1F0FCD2500C286AB /* Task JojoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A444492B1F0FCD2500C286AB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = Jojo;
+				TargetAttributes = {
+					A44449321F0FCD2500C286AB = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = A8NPCAHY27;
+						LastSwiftMigration = 0830;
+						ProvisioningStyle = Automatic;
+					};
+					A444494E1F0FCD2500C286AB = {
+						CreatedOnToolsVersion = 8.3.3;
+						ProvisioningStyle = Automatic;
+						TestTargetID = A44449321F0FCD2500C286AB;
+					};
+				};
+			};
+			buildConfigurationList = A444492E1F0FCD2500C286AB /* Build configuration list for PBXProject "Task Jojo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A444492A1F0FCD2500C286AB;
+			productRefGroup = A44449341F0FCD2500C286AB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A44449321F0FCD2500C286AB /* Task Jojo */,
+				A444494E1F0FCD2500C286AB /* Task JojoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A44449311F0FCD2500C286AB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A4681E371F133A7100EFB8C8 /* icons8-Add-50.png in Resources */,
+				A444496A1F0FD8EF00C286AB /* LoginViewController.xib in Resources */,
+				A444496F1F0FE14300C286AB /* MainViewController.xib in Resources */,
+				A44449771F0FEEF600C286AB /* ContainerViewController.xib in Resources */,
+				A43E08631F10C5F300FCCFAA /* InputViewController.xib in Resources */,
+				A44449491F0FCD2500C286AB /* LaunchScreen.storyboard in Resources */,
+				A44449461F0FCD2500C286AB /* Assets.xcassets in Resources */,
+				A44449411F0FCD2500C286AB /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A444494D1F0FCD2500C286AB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A444492F1F0FCD2500C286AB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A43E08621F10C5F300FCCFAA /* InputViewController.m in Sources */,
+				A444493B1F0FCD2500C286AB /* AppDelegate.m in Sources */,
+				A44449761F0FEEF600C286AB /* ContainerViewController.m in Sources */,
+				A43E09101F11454D00FCCFAA /* dbHelper.m in Sources */,
+				A44449381F0FCD2500C286AB /* main.m in Sources */,
+				A444496E1F0FE14300C286AB /* MainViewController.m in Sources */,
+				A44449691F0FD8EF00C286AB /* LoginViewController.m in Sources */,
+				A43E08F91F1134C900FCCFAA /* CoreData.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A444494B1F0FCD2500C286AB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A44449541F0FCD2500C286AB /* Task_JojoUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A44449511F0FCD2500C286AB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A44449321F0FCD2500C286AB /* Task Jojo */;
+			targetProxy = A44449501F0FCD2500C286AB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A444493F1F0FCD2500C286AB /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A44449401F0FCD2500C286AB /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A44449471F0FCD2500C286AB /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A44449481F0FCD2500C286AB /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A44449561F0FCD2500C286AB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		A44449571F0FCD2500C286AB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A44449591F0FCD2500C286AB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = A8NPCAHY27;
+				INFOPLIST_FILE = "Task Jojo/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.syafiq.Task-Jojo";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Task Jojo-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		A444495A1F0FCD2500C286AB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = A8NPCAHY27;
+				INFOPLIST_FILE = "Task Jojo/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.syafiq.Task-Jojo";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Task Jojo-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		A444495C1F0FCD2500C286AB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "Task JojoUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.syafiq.Task-JojoUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "Task Jojo";
+			};
+			name = Debug;
+		};
+		A444495D1F0FCD2500C286AB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "Task JojoUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.syafiq.Task-JojoUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "Task Jojo";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A444492E1F0FCD2500C286AB /* Build configuration list for PBXProject "Task Jojo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A44449561F0FCD2500C286AB /* Debug */,
+				A44449571F0FCD2500C286AB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A44449581F0FCD2500C286AB /* Build configuration list for PBXNativeTarget "Task Jojo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A44449591F0FCD2500C286AB /* Debug */,
+				A444495A1F0FCD2500C286AB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A444495B1F0FCD2500C286AB /* Build configuration list for PBXNativeTarget "Task JojoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A444495C1F0FCD2500C286AB /* Debug */,
+				A444495D1F0FCD2500C286AB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		A43E08F71F1134C900FCCFAA /* CoreData.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				A43E08F81F1134C900FCCFAA /* CoreData.xcdatamodel */,
+			);
+			currentVersion = A43E08F81F1134C900FCCFAA /* CoreData.xcdatamodel */;
+			name = CoreData.xcdatamodeld;
+			path = ../CoreData.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = A444492B1F0FCD2500C286AB /* Project object */;
+}
